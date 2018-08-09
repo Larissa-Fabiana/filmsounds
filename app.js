@@ -1,4 +1,4 @@
 $(document).ready(function(){
 // tela splash
-  $('.initial').fadeToggle(4000);
-}
+  $('#splash').delay(4000).fadeToggle('fast');
+});

@@ -4,58 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link href="https://file.myfontastic.com/E2rT9D9xcxaxuzrYNBcNdY/icons.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>modalzinho</title>
 </head>
 <body>
-    <section id='splash'>
-      <h1> Modalzinho </h1>
-    </section>
-
-    <main>
-      <header>
-        <h1>Modalzinho</h1>
-      <header>
-      <form>
-        <input id=filter type="text" placeholder="">
-        <button class="icon-search" type="button"></button>
-      </form>
-      <section class="tops">
-        <h2>Melhores playlist's da semana</h2>
-        <div class="cartaz">
+  <section id='splash' class='page-size'>
+    <h1> modalzinho </h1>
+  </section>
+  <main class='page-size'>
+    <header class='logo'>
+      <h2>modalzinho</h2>
+    </header>
+    <form>
+      <input id='filter-input' type="text" placeholder="Que filme você está procurando?">
+      <button class="icon-search" type="button"></button>
+    </form>
+    <section>
+      <h3>Melhores playlist's da semana</h3>
+      <div id='banners'>
+        <div class="banner">
           <div>
-            <img href=''>
+            <img src="images/vespa.jpg">
           </div>
-          <div>
+          <div class='banner-text'>
             <h4>Em cartaz</h4>
             <p>Confira a trilha sonora dos filmes que acabaram de estreiar!</p>
           </div>
         </div>
-        <div class="cartaz">
+        <div class="banner">
           <div>
-            <img href=''>
+            <img src="images/avatar.jpg">
           </div>
-          <div>
+          <div class='banner-text'>
             <h4>Top 10</h4>
             <p>Confira as trilhas sonoras mais acessadas!</p>
           </div>
         </div>
-        <div class="cartaz">
-          <div>
-            <img href=''>
-          </div>
-          <div>
-            <h4>Top Nostalgia</h4>
-            <p>As músicas mais nostálgicas você encontra aqui!</p>
+          <div class="banner">
+            <div>
+              <img src="images/bela.jpg">
+            </div>
+            <div class='banner-text'>
+              <h4>Top Nostalgia</h4>
+              <p>As músicas mais nostálgicas você encontra aqui!</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <section id="playlist">
-      <header>
-        <h1>Modalzinho</h1>
-      <header>
+    <section id='playlist' class='page-size'>
+      <header class='logo'>
+        <div class='menu-return'>
+          <button class="icon-angle-left"></button>
+          <h2>modalzinho</h2>
+        </div>
+      </header>
     </section>
-
-</body>
+    <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+    <script src="app.js"></script>
+  </body>
 </html>
