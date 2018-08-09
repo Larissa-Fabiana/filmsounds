@@ -16,5 +16,6 @@ Este foi o prototipo atraves do canvas
 ##Cronograma
 Este foi o cronograma atraves do trello 
 08/08 ![aqui](docs/cronograma/primeiro-dia.PNG)
-<!-- 09/08 ![aqui](Validar-cartao.jpeg)
-10/08 ![aqui](Validar-cartao.jpeg) -->
+09/08-inicio ![aqui](docs/cronograma/segundo-dia-15hrs.PNG)
+09/08-fim ![aqui](docs/cronograma/segundo-dia-fim.PNG)
+<!-- 10/08 ![aqui](Validar-cartao.jpeg) -->
