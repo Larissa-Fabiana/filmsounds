@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link href="https://file.myfontastic.com/E2rT9D9xcxaxuzrYNBcNdY/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>modalzinho</title>
 </head>
@@ -21,7 +22,7 @@
       <input id='filter-input' type="text" placeholder="Que filme você está procurando?">
       <button class="icon-search" type="button"></button>
     </form>
-    <section>
+    <section id='initial'>
       <h3>Melhores playlist's da semana</h3>
       <div id='banners'>
         <div class="banner">
@@ -53,15 +54,8 @@
           </div>
         </div>
       </section>
+      <section id='playlist' class='page-size'></section>
     </main>
-    <section id='playlist' class='page-size'>
-      <header class='logo'>
-        <div class='menu-return'>
-          <button class="icon-angle-left"></button>
-          <h2>modalzinho</h2>
-        </div>
-      </header>
-    </section>
     <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
     <script src="app.js"></script>
   </body>

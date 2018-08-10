@@ -42,6 +42,7 @@ form {
   display: flex;
   justify-content: center;
   margin-top: 3vh;
+  margin-bottom: 2vh;
 }
 
 #filter-input {
@@ -77,7 +78,7 @@ h3 {
   justify-content: center;
 }
 
-.banner {
+.banner, .banner-playlist {
   align-items: center;
   background-color: #fff;
   cursor: pointer;
@@ -88,26 +89,26 @@ h3 {
   width: 90vw;
 }
 
-  .banner-text {
-    width: 55vw;
-  }
+.banner-text {
+  width: 55vw;
+}
 
-  .banner p {
-    color: #666666;
-    font-size: 2vh;
-    font-weight: 700;
-  }
+.banner p {
+  color: #666666;
+  font-size: 2vh;
+  font-weight: 700;
+}
 
-  .banner img {
-    border-radius: 50%;
-    height: 14vh;
-    width: 14vh;
-  }
+.banner img {
+  border-radius: 50%;
+  height: 14vh;
+  width: 14vh;
+}
 
-  .banner h4 {
-    font-size: 3vh;
-    margin: 0;
-  }
+.banner h4 {
+  font-size: 3vh;
+  margin: 0;
+}
 
 .menu-return {
     display: grid;
@@ -129,4 +130,36 @@ h3 {
   cursor: pointer;
   font-size: 3vh;
   grid-column: 1/2;
+}
+
+#playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-playlist {
+  background-color: #8c3f79;
+  color: #fff;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-playlist h4 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 8vw;
+  align-self: flex-start;
+}
+
+.play-div {
+  display: flex;
+  justify-content: center;
+}
+
+.play-div hr {
+  width: 40vw;
+  margin-right: 20px;
+  border: solid 1px white;
 }
