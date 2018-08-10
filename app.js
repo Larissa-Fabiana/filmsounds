@@ -5,6 +5,7 @@ $(document).ready(function(){
   $('.icon-search').click(function() {
     $('#initial').fadeOut('slow');
     $('#playlist').fadeIn('slow');
+    $('#playlist').html('');
     getMovieSounds();
   })
 });
