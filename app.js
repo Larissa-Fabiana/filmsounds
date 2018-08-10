@@ -13,23 +13,22 @@ $(document).ready(function(){
 function getMovieSounds() {
   var input = $('input').val();
   var inputUpperCase = input.toUpperCase();
-  var arrayInput = inputUpperCase.split(' ');
-  var arrayInputToUrl = input.replace(' ', '%20');
+  var arrayInput = inputUpperCase.split();
 
-  var url = 'https://api.vagalume.com.br/search.artmus?q=' + arrayInputToUrl + '%20trilha%20sonora&limit=5';
+  var url = 'https://www.vagalume.com.br/disney/index.js';
 
   var foundSongs = [];
 
   fetch(url).then(function(response) {  
     response.json().then(function(json) {
-      json.response.docs.forEach(function(song, index) {
-        var arrayOfBand = song.band.split(' ');
-        var arrayOfBandToUpperCase = [];
-        for (word2 of arrayOfBand) {
-          arrayOfBandToUpperCase.push(word2.toUpperCase());
+      json.artist.lyrics.item.forEach(function(song, index) {
+        var arrayOfDesc = song.desc.split(' - ');
+        var arrayOfDescToUpperCase = [];
+        for (word2 of arrayOfDesc) {
+          arrayOfDescToUpperCase.push(word2.toUpperCase());
         }
 
-      var filterToSongs =  compare(arrayInput, arrayOfBandToUpperCase, index);
+      var filterToSongs =  compare(arrayInput, arrayOfDescToUpperCase, index);
           
       foundSongs.push(filterToSongs);
 
@@ -37,10 +36,10 @@ function getMovieSounds() {
       for (song of foundSongs) {
         if (song.show) {
           var indexOfSong = foundSongs.indexOf(song);
-          var songTitle = json.response.docs[indexOfSong].title;
+          var songTitle = json.artist.lyrics.item[indexOfSong].desc;
           if (songTitle !== undefined) {
             var newDiv = $('<div></div>').addClass('banner-playlist');
-            var songName = $('<h4></h4>').html(songTitle); 
+            var songName = $('<h4></h4>').html(songTitle.split(' - ')[1]); 
             var playDiv = $('<div></div>').html('<hr>' + '<i class="fas fa-play"></i>').addClass('play-div');
             newDiv.append(songName);
             newDiv.append(playDiv);
